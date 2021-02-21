@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  min-width: 375px;
+  background-color: #e5eff5;
+  justify-content: center;
+  align-items: center;
+  flex: none;
+}
+
+main {
+  margin: 4em 2em 2em;
+  box-shadow: 0 0 10px gray;
+}
+@media (min-width: 43.75em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 42em;
+  }
+}
+main section {
+  padding: 1.5em;
+}
+
+.community {
+  background-color: #fff;
+}
+@media (min-width: 43.75em) {
+  .community {
+    font-size: 1.2em;
+    grid-area: 1/1/2/span 2;
+  }
+}
+.community > * {
+  margin-bottom: 1em;
+  padding-right: 3em;
+}
+.community h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #2ab2af;
+}
+.community h2 {
+  font-size: 0.95em;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #c0df34;
+}
+.community p {
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 2;
+  color: #98a6bd;
+}
+
+.subscription {
+  color: #fff;
+  background-color: #2ab2af;
+  line-height: 2;
+}
+.subscription h1 {
+  font-size: 1.2em;
+}
+.subscription h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+}
+.subscription h2 em {
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  margin-right: 0.5em;
+}
+.subscription h2 strong {
+  font-weight: 400;
+  color: #7cd0ce;
+}
+.subscription p {
+  margin-top: -0.5em;
+  margin-bottom: 1.5em;
+  color: #c7ebea;
+}
+.subscription a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  background-color: #c0df34;
+  color: white;
+  border-radius: 0.5em;
+  font: 700 1em "Karla", sans-serif;
+  padding: 0.7em 6.3em;
+  box-shadow: 0 3px 10px gray;
+}
+
+.why {
+  line-height: 1.8;
+  background-color: #4bbebc;
+  color: white;
+}
+.why h1 {
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  padding-right: 5em;
+}
+.why ul {
+  font-size: 0.8em;
+  line-height: 1.5;
+  font-weight: 400;
+  list-style-type: none;
+  padding-right: 5em;
+  color: #c7ebea;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 2em;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */

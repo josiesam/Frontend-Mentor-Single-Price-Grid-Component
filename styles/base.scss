@@ -1,0 +1,165 @@
+//Color
+  //Primary
+$cyan: hsl(179, 62%, 43%);
+$light_cyan: hsl(179, 47%, 52%);
+$bright_yellow: hsl(71, 73%, 54%);
+
+  //Neutral
+$light_gray: hsl(204, 43%, 93%);
+$grayish_blue: hsl(218, 22%, 67%);
+
+//Typography
+$Font_size: 16px;
+$Font_family: "Karla", sans-serif;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;   
+  margin: 0;  
+  padding: 0;  
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;   
+  font-family: $Font_family;
+  font-size: $Font_size;  
+  width: 100%;  
+  height: 100vh;  
+  min-width: 375px;
+  background-color: $light_gray;   
+  justify-content: center;  
+  align-items: center;  
+  flex: none;
+}
+
+main {
+  margin: 4em 2em 2em;  
+  box-shadow:  0 0 10px hsl(0, 0%, 50%);  
+  @media (min-width: 43.75em) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 42em;
+  }
+
+  section {
+    padding: 1.5em;  
+  }
+
+}  
+
+.community {
+  background-color: #fff;  
+  @media (min-width: 43.75em) {
+    font-size: 1.2em;  
+    grid-area: 1 / 1 / 2 / span 2;
+  }
+  
+  & > * {
+    margin-bottom: 1em;  
+    padding-right: 3em;  
+  }
+  
+  h1 {
+    font-size: 1.3em;  
+    font-weight: 700;  
+    color: $cyan;
+  }   
+
+  h2 {
+    font-size: .95em;  
+    font-weight: 700;  
+    line-height: 1.5;
+    color: $bright_yellow;
+  }
+
+  p {
+    font-size: .85em;  
+    font-weight: 400;  
+    line-height: 2;
+    color: $grayish_blue;
+  }
+
+}
+
+.subscription {
+  color: #fff;  
+  background-color: $cyan;  
+  line-height: 2;
+
+  h1 {
+    font-size: 1.2em;  
+  }
+
+  h2 {
+    display: flex;
+    align-items: center;  
+    font-size: 1em;  
+
+    em {
+      font-size: 2em;  
+      font-style: normal;
+      font-weight: 700;   
+      color: #fff;
+      margin-right: .5em;   
+    }
+    strong  {
+      font-weight: 400;  
+      color: hsl(179, 47%, 65%);
+    }
+
+  }
+
+  p {
+    margin-top: -.5em;  
+    margin-bottom: 1.5em;  
+    color: hsl(179, 47%, 85%);
+  }
+  
+  a {
+    display: block;  
+    text-decoration: none;  
+    text-align: center;  
+    background-color: $bright_yellow;  
+    color: hsl(0, 0%, 100%);
+    border-radius: .5em;  
+    font: 700 1em $Font_family;  
+    padding: .7em 6.3em;
+    box-shadow: 0 3px 10px  hsl(0, 0%, 50%) ;   
+  }
+
+}
+
+.why {
+  line-height: 1.8;
+  background-color: $light_cyan;  
+  color: hsl(0, 0%, 100%); 
+
+  h1 {
+    font-size: 1em;  
+    margin-bottom: .5em;  
+    padding-right: 5em;  
+  }  
+  
+  ul {
+    font-size: .8em;  
+    line-height: 1.5;
+    font-weight: 400;  
+    list-style-type: none;  
+    padding-right: 5em;  
+    color: hsl(179, 47%, 85%);
+  } 
+
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;  
+  padding: 2em;  
+  a {
+    color: hsl(228, 45%, 44%);    
+  }
+}
