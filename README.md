@@ -2,6 +2,8 @@
 
 ![Design preview for the Single Price Grid Component coding challenge](./design/desktop-preview.jpg)
 
+[Check out a live preview](https://frontend-mentor-single-price-grid-component-josiesam.vercel.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
